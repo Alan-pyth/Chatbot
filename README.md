@@ -10,3 +10,6 @@ Feel free to download and use the code and try it yourself! After downloading al
 
 # Example
 ![ScreenShot](Chatbot.png)
+
+# Model Architecture 
+![ScreenShot](ModelAch.png)
