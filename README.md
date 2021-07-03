@@ -6,7 +6,7 @@ The project aims to reproduce a AI chatbot for online coffee and tea retail. A F
 2. torch: define model architect and trainning pipeline. (NeuralNet class is inherited from torch.nn.Module)
 3. Others: Numpy ...
 
-Feel free to use the code and try it yourself!
+Feel free to download and use the code and try it yourself! After downloading all files, type in "python chat.py" to play around.
 
 # Example
 ![ScreenShot](Chatbot.png)
