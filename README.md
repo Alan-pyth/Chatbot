@@ -11,5 +11,7 @@ Feel free to download and use the code and try it yourself! After downloading al
 # Example
 ![ScreenShot](Chatbot.png)
 
-# Model Architecture 
+# Model Architecture
+Model have 1 input layer and 1 hidden layer (relu), and 1 output layer (Softmax) which has number of neurons equal to the number of tags.
+
 ![ScreenShot](ModelAch.png)
