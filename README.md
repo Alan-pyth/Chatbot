@@ -13,7 +13,7 @@ Feel free to download and use the code and try it yourself! After downloading al
 ![ScreenShot](Chatbot.png)
 
 # Updated: Example with GUI
-![ScreenShot](GUI.png)
+![ScreenShot](APP_GUI.png)
 
 # Model Architecture
 Model have 1 input layer and 1 hidden layer (relu), and 1 output layer (Softmax) which has number of neurons equal to the number of tags.
