@@ -1,5 +1,5 @@
 # Chatbot 
-# !!!(Conducting research on python GUI package and Making GUI for the chatbot)!!!
+## UPDATED: GUI is now competed!
 The project aims to reproduce a AI chatbot for online coffee and tea retail. A Feed-forward neural network is implemented to classify the bag of words generated from the customer interaction. The activation of the last layer is softmax. If the predicted probability of all the classes is lower than 75%, the bot will say "Sorry, I do not understand.". Otherwise, one of the pre-defined responses will be randomly chosen from the predicted class and answer the customer enquiry. The bot can be easily scaled to handle more types of enquiry by simply adding more intents into the "intents.json" file.
 
 ## The package I used are:
@@ -11,6 +11,9 @@ Feel free to download and use the code and try it yourself! After downloading al
 
 # Example
 ![ScreenShot](Chatbot.png)
+
+# Updated: Example with GUI
+![ScreenShot](GUI.png)
 
 # Model Architecture
 Model have 1 input layer and 1 hidden layer (relu), and 1 output layer (Softmax) which has number of neurons equal to the number of tags.
