@@ -25,20 +25,21 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = 'Sam'
-print("Let's chat! Type 'quit' to exit")
 
-while True:
-    sentence = input('You: ')
-    if sentence == 'quit':
-        break
-    sentence = tokenize(sentence)
+#Chatbot
+bot_name = 'Sam'
+print("How can I help you with! Type 'quit' to exit")
+
+
+def get_response(msg):
+    sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X)
 
-    output = model(X)
+    output = model.forward(X)
     _, predicted = torch.max(output, dim=1)
+    
     tag = tags[predicted.item()]
 
     probs = torch.softmax(output, dim=1)
@@ -47,8 +48,8 @@ while True:
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent['tag']:
-                print(f"{bot_name}: {random.choice(intent['responses'])}") #Randomly choose a response.
-    else:
-        print(f"{bot_name}: Sorry, I do not understand.")
+                return random.choice(intent['responses'])
+    
+    return "Sorry, I do not understand."
 
 
